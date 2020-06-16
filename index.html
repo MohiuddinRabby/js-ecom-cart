@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>js cart</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>js Cart</title>
   </head>
   <body>
+    <div class="container-fluid bg-light">
+      <section class="product-container float-left">
+        <div class="row py-5">
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/1.jpg" class="card-img-top item-img" alt="" />
+                <h2 class="card-title">iPhone 5s</h2>
+                <p>Price: $<span id="iphone5s-price">300</span></p>
+                <div class="d-flex">
+                  <button class="btn btn-secondary" id="iphone5s-minus-btn">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    class="text-center form-control" id="iphone5s-unit"
+                    value="1"
+                  />
+                  <button id="iphone5s-plus-btn" class="btn btn-secondary">
+                    +
+                  </button>
+                </div>
+                <div class="py-1">
+                  <h3>Total: $<span id="iphone5s-totalPrice">300</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/2.jpg" class="card-img-top item-img" alt="" />
+                <h2 class="card-title">Samsung</h2>
+                <p>Price: $<span id="samsung-price">200</span></p>
+                <div class="d-flex">
+                  <button id="samsung-minus-btn" class="btn btn-secondary">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    class="text-center form-control"
+                    value="1"
+                  />
+                  <button id="samsung-plus-btn" class="btn btn-secondary">
+                    +
+                  </button>
+                </div>
+                <div class="py-1">
+                  <h3>Total: $<span id="samsung-totalPrice">200</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="card">
+              <div class="card-body">
+                <img src="img/3.jpg" class="card-img-top item-img" alt="" />
+                <h2 class="card-title">iPhoneX+Airpod</h2>
+                <p>Price:$<span id="iphonex-price">1200</span></p>
+                <div class="d-flex">
+                  <button id="iphonex-minus-btn" class="btn btn-secondary">
+                    -
+                  </button>
+                  <input
+                    type="number"
+                    class="text-center form-control"
+                    value="1"
+                  />
+                  <button id="iphonex-plus-btn" class="btn btn-secondary">
+                    +
+                  </button>
+                </div>
+                <div class="py-1">
+                  <h3>Total: $<span id="iphonex-totalPrice">1200</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cart-container float-right py-5">
+        <div class="text-center">
+          <h1 class="">Cart</h1>
+          <h2>Total: $<span id="total-cost">0.00</span></h2>
+          <p>Shipping: $<span id="shipping-cost">0.00</span></p>
+          <p>Tax: $<span id="tax">0.00</span></p>
+        </div>
+      </section>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>
